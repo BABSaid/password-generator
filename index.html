@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Créer un mot de passe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="box">
+        <button class="language-toggle" id="language-toggle" type="button" aria-label="Switch to English">EN</button>
+        <h2 id="heading">Créer un mot de passe</h2>
+        <div class="input-box">
+            <input
+                type="password"
+                id="password"
+                placeholder="Entrez le mot de passe"
+                autocomplete="new-password">
+            <span class="eye" id="eye" role="button" tabindex="0" aria-label="Afficher le mot de passe">&#x1F441;</span>
+        </div>
+        <button class="generate-button" id="generate" type="button">Créer un mot de passe fort</button>
+        <button class="copy-button" id="copy" type="button">Copier le mot de passe</button>
+        <div class="copy-status" id="copy-status" aria-live="polite"></div>
+        <div class="strength" aria-hidden="true">
+            <div class="bar" id="bar"></div>
+        </div>
+        <div class="message" id="message" aria-live="polite">Commencez à écrire...</div>
+    </main>
+    <footer class="site-footer">
+        <span id="footer-security">Sécurisé par InconnueOP</span>
+        <span class="site-credit" id="footer-credit">Créé par : InconnueOP</span>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
